@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color:darkslateblue;
+        }
+        .top {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            color: white;
+            
+        }
+        p {
+            margin-top:15px;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            height: 20px;
+            /* width: 0px; */
+        
+            
+        }
+        input{
+            background-color:darkslateblue;
+            color: white;
+            padding-left: 20px;
+            border-radius: 5px;
+            border: lightblue;
+            box-shadow: 0px 0px 5px 0px  black;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            /* justify-content: space-around; */
+            gap: 80px;
+            margin-top: 60px;
+            position: relative;
+            padding: 2px 10px;
+            
+            
+        
+        }
+        .amazon{
+            box-shadow: 0px 0px 0px 5px gray ;
+            /* background-color:gray; */
+            border-radius: 5px;
+            transition-duration: 1.5s;
+            /* transition-delay: 0.6s; */
+            padding-bottom: 2px;
+            height: 40px;
+            width: 60px;
+
+
+        }
+        .font{
+            box-shadow: 0px 0px 0px 6px gray ;
+            /* background-color:gray; */
+            border-radius: 5px;
+            transition-duration: 1.5s;
+            padding-left: 0px;
+            width: 50px;
+            height: 50px;
+            padding-right:0px
+            
+        }
+        .git{
+            box-shadow: 0px 0px 0px 5px gray ;
+            /* background-color:gray; */
+            border-radius: 5px;
+            transition-duration: 1.5s;
+            width: 50px;
+            padding-top: 0px;
+            height: 50px;
+        
+
+        }
+        .Utube{
+            box-shadow: 0px 0px 0px 5px gray ;
+            
+            border-radius: 5px;
+            transition-duration: 1.5s;
+            padding-left: 1.px;
+            width: 50px;
+            height: 49px;
+
+            
+
+        }
+        .amazon:hover{
+            opacity:0.5;
+         transform: scale(1.5);
+            
+            
+        
+        }
+        .font:hover{
+            opacity:0.5;
+         transform: scale(1.5);
+            
+         }
+         .git:hover{
+            opacity:0.5;
+         transform: scale(1.5);
+         }
+         .Utube:hover{
+            opacity:0.5;
+        transform: scale(1.5);
+         }
+          @media  screen and (min-width:20px){
+            
+            .card{
+                    display: flex;
+                    
+                    /* justify-content: center; */
+                    /* flex-direction: column; */
+                }
+            
+            
+        }  
+            
+         
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+    <img src="images/firefox.jpg" alt="" height="60px">
+    <p>Firefox</p>
+    </div>
+    <span>
+    <input type="text" placeholder="Search with Google or enter address" size="60">
+    </span>
+    </header>
+    <section>
+        <div class="card">
+
+         <div class="amazon"  ><img src="images/amazon.jpg" alt="" height="40px">Amazone</div>
+         <div class="font"  ><img src="images/font.png" alt="" height="50px">Font awesome</div>
+            <div class="git"  >   <img src="images/github.png" alt="" height="50px" width="50px">Git hub</div>
+                <div class="Utube"  >   <img src="images/Utube.jpg" alt="" height="50px">Utube</div>
+            
+            <!-- <p>Amazon<br>sponsored</p> -->
+        </div>
+    </section>
+</body>
+</html>

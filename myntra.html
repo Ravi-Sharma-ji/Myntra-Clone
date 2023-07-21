@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+
+        header {
+            background-color: white;
+            /* height: 20vh; */
+            width: 100%;
+            height: 88px;
+            display: flex;
+            /* flex-wrap: nowrap; */
+            justify-content: space-between;
+            box-shadow: 0px 0px 10px 1px rgb(140, 140, 140);
+            /* padding: 0px 40px; */
+
+
+        }
+
+        .first {
+            display: flex;
+
+            justify-content: space-between;
+            font-size: 15px;
+            align-items: center;
+            margin-top: 10px;
+            position: relative;
+            right: 20px;
+
+
+        }
+
+        .logo {
+            height: 55px;
+            /* font-size: larger; */
+            width: 90px;
+            /* background-color: #ff4b75; */
+            background-image: url(images/myntra.jpg);
+            /* margin-right: 100px; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* margin-right: 10px; */
+            padding-left: 10px;
+            position: relative;
+            /* right: 0.5px; */
+            left: 0.011px;
+            margin-top: 20px;
+        }
+
+        /* aside{
+            color: black;
+            opacity:0;
+            font-size: 30px;
+         }
+         aside h4{
+            color: red;
+         }
+         aside p{
+            margin-top: 20px;
+         } */
+
+
+
+
+
+
+        /* nav{
+         width: 40vh; 
+    } */
+        nav ul {
+            /* background-color: red;  */
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            justify-content: space-between;
+
+        }
+
+        nav ul li a {
+            /* background-color: red; */
+            text-decoration: none;
+            color: black;
+            font-size: 1.02vw;
+            font-weight: 600;
+            padding: 0px 1vh;
+            padding-bottom: 28px;
+            border-bottom: 3px solid transparent;
+            /* color: red; */
+            text-transform: uppercase;
+            padding-left: 6px;
+
+
+        }
+
+        sup {
+            color: #ff4b75
+        }
+
+        nav ul li a:hover {
+            border-color: #ff4b75;
+            /* border-bottom: dotted; */
+        }
+
+        nav ul li a:nth-of-type(2):hover {
+            border-color: goldenrod;
+        }
+
+        nav ul li a:nth-of-type(3):hover {
+            border-color: yellowgreen;
+        }
+
+        nav ul li a:nth-of-type(4):hover {
+            border-color: skyblue;
+        }
+
+        nav ul li a:nth-of-type(5):hover {
+            border-color: red;
+        }
+
+        nav ul li a:nth-of-type(6):hover {
+            border-color: dark palevioletred;
+        }
+
+        .second {
+            display: flex;
+
+            align-items: center;
+
+            background-color: rgba(197, 197, 197, 0.182);
+            border-radius: 10px;
+            width: 191px;
+            justify-content: space-between;
+            position: relative;
+            right: 15px;
+            height: 45px;
+            margin-top: 20px;
+
+
+        }
+
+        /* second span{
+        background-color: red;
+    } */
+        form {
+            width: 80%;
+
+
+        }
+
+        form input {
+            width: 100%;
+            padding: 0.4vw 1vw;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 15px;
+
+
+
+        }
+
+        .burger {
+            color: black;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        .fa-magnifying-glass {
+            color: black;
+            position: relative;
+            left: 20px;
+            margin-top: 11px;
+            font-size: 22px;
+        }
+
+
+
+        .third {
+            /* background-color: red; */
+            display: flex;
+        
+            align-items: center;
+            justify-content: space-around;
+            width: 250px;
+            text-align: center;
+            font-weight: 50;
+            margin-top: 10px;
+        } 
+
+        .card1 {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            margin: 25px 1px;
+
+
+        }
+
+        main {
+            /* background-attachment: local; */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .card2 {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            /* background-color: red; */
+            margin: 25px 1px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .fotter {
+            width: 100%;
+            height: 500px;
+            display: inline-block;
+            padding: 14px 8px;
+            font-size: 16px;
+
+        }
+
+        .fotter1 {
+            transform: translate(250px, -310px);
+            /* display: flex; */
+            font-size: 16px;
+            width: 50%;
+        }
+
+        .google {
+            float: right;
+            transform: translate(470px, -520px);
+            flex-direction: column;
+        }
+
+        .fotter2 {
+            display: flex;
+            transform: translate(480px, -300px);
+            font-size: 20px;
+            gap: 15px;
+            color: black;
+            width: 20%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <article class="first">
+            <!-- <i class="fa-solid fa-bars burger"></i> -->
+
+
+            <div class="logo"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href>Men</a>
+                        <a href>Women</a>
+                        <a href>Kids</a>
+                        <a href>Home&Living</a>
+                        <a href>Beauty</a>
+                        <a href>Studio</a>
+                        <sup>New</sup>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+        <article class="second">
+            <span>
+                <!-- <i class="fa-regular fa-magnifying-glass"></i> -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </span>
+            <form>
+                <input type="text" placeholder="Search for products brands and more">
+            </form>
+        </article>
+        <article class="third">
+            <nav>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <a href>Profile</a>
+                        <span><i class="fa-solid fa-heart"></i></span>
+                        <a href>Wishlist</a>
+                        <span><span><i class="fa-solid fa-bag-shopping"></i></span>
+                            <a href>bag</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
+        </article>
+    </header>
+    <aside>
+        <!-- <h4>Topwear</h4>
+            
+            <p>T-shirt</p>
+            <p>Casual-Shirt</p>
+            <p>Formal-Shirt</p>
+            <p>Jackets</p>
+            <p>Suits</p>
+         </aside>  -->
+        <main class="card">
+            <h1>Crazy Deals</h1>
+            <p>Knockout Saves This way</p>
+            <div class="card1">
+                <div class="images">
+                    <image src="images/myntra1.jpg" height="200" width=""></image>
+                    <image src="images/myntra2.jpg" height="200" width=""></image>
+                    <image src="images/myntra3.jpg" height="200" width=""></image>
+                    <image src="images/myntra 4.jpg" height="200" width=""></image>
+                    <image src="images/myntra5.jpg" height="200" width=""></image>
+                    <!-- <image src="images/myntra6.jpg" height="200" width="400"></image> -->
+                </div>
+            </div>
+            <h2>Most-Loved Brands</h2>
+            <div class="card2">
+                <div class="images2">
+
+                    <image src="images/myntra.1.jpg" height="200" width=""></image>
+                    <image src="images/myntra.2.jpg" height="200" width="200"></image>
+                    <image src="images/myntra.3.jpg"height="200"width=""></image>
+                    <image src="images/myntra.4.jpg" height="200" width="300"></image>
+                    <image src="images/myntra.5.jpg" height="200" width="250px"></image>
+                    <image src="images/myntra.6.jpg" height="200" width="200"></image>
+
+                </div>
+
+            </div>
+        </main>
+        <footer >
+            <div class="fotter">
+                <h3>ONLINE SHOPPING</h3><br>
+                <p1>Men</p1><br>
+                <p2>Women</p2><br>
+                <p3>Kids</p3><br>
+                <p4>Home&Living</p4><br>
+                <p5>Gift Cards</p5><br>
+                <p6>Myntra Insider</p6><br><br>
+                <h3>Useful Links</h3><br>
+                <p1>Blog</p1><br>
+                <p2>Careers</p2><br>
+                <p3>Site Map</p3><br>
+                <p4>Corporate Information</p4><br>
+                <p5>Whitehat</p5><br>
+            </div>
+            <div class="fotter1">
+
+                <h3>CUSTOMER POLICES</h3><br>
+                Contact Us<br>
+                FAQ<br>
+                T&C</p3><br>
+                Terms Of Use<br>
+                Track Orders
+                Shipping<br>
+                Cancellation<br>
+                Returns<br>
+                Privacy policy<br>
+                Grievance Officer
+
+            </div>
+            <div class="fotter2">
+
+                <p class="fb"><i class="fa-brands fa-facebook"></i></p>
+                <p class="twit"><i class="fa-brands fa-twitter"></i></p>
+                <p class="utube"><i class="fa-brands fa-youtube"></i></p>
+                <p class="insta"><i class="fa-brands fa-instagram"></p>
+
+            </div>
+            <div class="google">
+                <image src="images/Google.webp" height="50px"></image><br><br><br>
+                <image src="images/Apple-app.webp" height="50px"></image>
+            </div>
+        </footer>
+
+</body>
+
+</html>
